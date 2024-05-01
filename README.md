@@ -34,6 +34,50 @@ List each employee in the Sales and Development departments, including their emp
 
 List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
 
+# Data Modeling Schema
+
+# Modify this code to update the DB schema diagram.
+# To reset the sample schema, replace everything with
+# two dots ('..' - without quotes).
+
+departments
+-----------
+dept_no VARCHAR(5)
+dept_name string
+
+dept_emp
+--------
+emp_no PK int FK >- employees.emp_no
+dept_no PK int FK >- departments.dept_no
+
+
+
+dept_manager
+------------
+dept_no PK int
+emp_no int FK >- departments.dept_no
+
+
+employees
+---------
+emp_no PK int FK >- salaries.emp_no
+emp_title_id VARCHAR(5)
+birth_date date
+first_name string
+last_name string
+sex VARCHAR(5)
+hire_date date
+
+salaries
+--------
+emp_no PK int
+salary int
+
+titles
+------
+title_id VARCHAR(5) FK >- employees.emp_title_id
+title string
+
 # Complete Work Cited
 
 https://www.w3schools.com/postgresql/postgresql_like.php
