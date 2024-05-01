@@ -36,9 +36,9 @@ List the frequency counts, in descending order, of all the employee last names (
 
 # Data Modeling Schema
 
-# Modify this code to update the DB schema diagram.
-# To reset the sample schema, replace everything with
-# two dots ('..' - without quotes).
+-- Modify this code to update the DB schema diagram.
+-- To reset the sample schema, replace everything with
+-- two dots ('..' - without quotes).
 
 departments
 -----------
