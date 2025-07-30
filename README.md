@@ -1,4 +1,4 @@
-# sql-challenge
+# employee-db-sql
 
 # Data Modeling
 
